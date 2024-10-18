@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.nav {
+    background-color: #111727;
+    width: 100px;
+    padding: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 15px ;
+    border-style: none;
+  }

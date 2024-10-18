@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/nav.css">
+    </head>
+
+    <body style="background-color: #dfdfdf;">
+        <nav>
+            <ul style="list-style-type: none; background-color: #111727;; display: flex; gap: 1px; height: 50px; align-items: center; padding: 10px;">
+                <li><img src="https://play-lh.googleusercontent.com/K90jDcHCdKOsU-fy9kC7kPfiLpUcWn3eCPpa3meKCEW_5Zfd8SrQC3F1Q-qRLlYYwNU=w600-h300-pc0xffffff-pd" alt="" width="100px" height="50px"></li>
+                <li>
+                    <button class="nav"><a href="index.html" style="text-decoration: none; color: white;">Home</a></button>
+                </li>
+                <li>
+                    <button class="nav"><a href="blog.html" style="text-decoration: none; color: white;">My Project</a></button>
+                </li>
+                <li style="display: flex; justify-content: flex-end; width: 86%; margin-right: 2%;">
+                    <button class="nav"><a href="contact.html" style="text-decoration: none; color: white;">Contact Me</a></button>
+            </ul>
+        </nav>
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; margin-top: 50px;">Get In Touch</h1>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+        <form 
+        onsubmit="sendToMail(event)"
+        style="display: flex; flex-direction: column; width: 250px; gap: 10px;">
+        <div>
+            <label style="text-align: center;">Name</label>
+            <input id="input-name" class="s-input"/>
+        </div>
+        <div>
+            <label style="text-align: center;">Email</label>
+            <input id="input-email" class="s-input"/>
+        </div>
+        <div>
+            <label style="text-align: center;">Phone Number</label>
+            <input id="input-phone" class="s-input"/>
+        </div>
+        <div>
+            <label style="text-align: center;">Subject</label>
+            <select id="input-subject" class="s-input">
+                <option value="Fullstack Developer" style="background-color: white;">Fullstack Developer</option>
+                <option value="Frontend Developer" style="background-color: white;">Frontend Developer</option>
+                <option value="Backend Developer" style="background-color: white;">Backend Developer</option>
+            </select>
+        </div>
+        <div>
+            <label style="text-align: center;">Your Message</label>
+            <textarea id="input-message" style="height: 100px; border-style: none; 
+                background-color: rgb(206, 206, 206); border-radius: 5px;"></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <button style="background-color: #111727; color: white; border-radius: 10px; height: 25px; font-weight: bold; width: 150px;">
+                Submit
+            </button>
+        </div>
+        </form>
+        </div>
+        <script src="assets/js/contact.js"></script>
+    </body>
+</html>

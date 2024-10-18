@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Adding My Project</title>
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+  </head>
+
+  <body style="background-color: #dfdfdf;">
+    <nav>
+        <ul style="list-style-type: none; background-color: #111727; display: flex; gap: 1px; height: 50px; align-items: center; padding: 10px;">
+            <li><img src="https://play-lh.googleusercontent.com/K90jDcHCdKOsU-fy9kC7kPfiLpUcWn3eCPpa3meKCEW_5Zfd8SrQC3F1Q-qRLlYYwNU=w600-h300-pc0xffffff-pd" alt="" width="100px" height="50px"></li>
+            <li>
+                <button class="nav"><a href="index.html" style="text-decoration: none; color: white;">Home</a></button>
+            </li>
+            <li>
+                <button class="nav"><a href="blog.html" style="text-decoration: none; color: white;">My Project</a></button>
+            </li>
+            <li style="display: flex; justify-content: flex-end; width: 86%; margin-right: 2%;">
+                    <button class="nav"><a href="contact.html" style="text-decoration: none; color: white;">Contact Me</a></button>
+        </ul>
+    </nav>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1 style="font-size: 40px;">ADD MY PROJECT</h1><br>
+            <div>
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" />
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <div>
+                <label for="input-start-date">Start Date</label>
+                <input id="input-start-date" type="date" />
+              </div>
+              <div>
+                <label for="input-end-date">End Date</label>
+                <input id="input-end-date" type="date" />
+              </div>
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <div>
+                <p>Technology</p><br>
+              <div style="display: flex; gap: 15px;">
+                <input type="checkbox" id="html" value="html" />
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" value="css" />
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" value="js" />
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="TypeScript" value="TypeScript" />
+                <label for="TypeScript">TypeScript</label>
+              </div>
+              <br>
+              <br>
+            </div>
+            <div>
+              <label style="display: flex; justify-content: center;"><b>Upload Image</b></label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <div style="border: 2px solid black; padding: 5px;">
+                    <p style="font-weight: bolder; height: 10; display: flex;align-items: center;">Attach File</p>
+                  </div>
+                  <img src="assets/icon/attach.png" alt="file" style="height: 30px; width: 30px; margin-right: 10px;" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+              <button style="margin-top: -1px; background-color: #111727; font-weight: bold; width: 100%">Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div id="contents" class="blog-list"></div>
+    </div>
+    
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

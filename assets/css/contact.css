@@ -1,0 +1,33 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #111727;
+    width: 100px;
+    padding: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 15px ;
+    border-style: none;
+  }
+
+.s-input {
+    border-style: none; 
+    background-color: rgb(206, 206, 206); 
+    height: 25px; 
+    border-radius: 5px;
+} 
+
+label {
+    display:block;
+    font-weight: bold
+}
+
+input, select, textarea {
+    width: 100%;
+}
+
